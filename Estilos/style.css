@@ -1,0 +1,154 @@
+/* Dar estilos con etiquetas */
+/* header {
+  width: 400px;
+}
+
+h1 {
+  color: green;
+}  */
+
+/* Dar estilos con clases */
+/* .titulo-jugador-1 {
+  font-size: 40px;
+}
+
+.color-naranja {
+  color:cornflowerblue;
+}
+
+.imagen {
+  width: 200px;
+} */
+
+/* Dar estilos con id */
+/* #armas-jugador-1 {
+  background-color: brown;
+} */
+
+/* ----------------------------------------- */
+
+/* Reiniciar estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabecera {
+  background-color: salmon;
+  padding: 30px;
+}
+
+.titulo-principal {
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+}
+
+.input-label {
+  max-width: 200px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.imagen {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.imagen:hover {
+  transform: scale(1.5);
+}
+
+.jugador-1 {
+  padding: 60px 30px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-jugador-1 {
+  margin-bottom: 20px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  /* text-align: center; */
+}
+
+.pie-de-pagina {
+  text-align: center;
+}
+
+.resaltado {
+  color: salmon;
+  font-weight: 600;
+}
+
+.grupo-arma {
+  margin: 0 30px;
+}
+
+.grupos-armas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: salmon;
+  border: none;
+  padding: 12px 28px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 8px;
+  transition: background-color 1s;
+}
+
+.btn:hover {
+  background-color: rgb(167, 87, 76);
+}
+
+.btn:focus {
+  background-color: blue;
+}
+
+.input-radio  {
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px){
+  .btn {
+    background-color: rgb(86, 182, 150);
+  }
+}
+
+@media (max-width: 1024px) {
+  .grupo-arma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-radio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .grupos-armas {
+    flex-direction: column;
+  }
+
+  .jugador-1 {
+    height: auto;
+  }
+
+  .titulo-jugador-1 {
+    text-align: center;
+  }
+}
