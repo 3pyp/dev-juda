@@ -15,3 +15,4 @@ git branch  ---> muestra las ramas que tengo en mi local
 git remote  ---> muestra el nombre del repositorio remoto que creamos
 git config --global user.name  "[nombre]"  ---> Configura el user name en nuestro computador de forma global 
 git config --global user.email "[email]"  ---> Configura el user email en nuestro computador de forma global 
+git reset --hard [id-del-commit] ---> Devuelve a un commit anterior (Evitar hacer esto muy seguido, solo en casos extremos)
