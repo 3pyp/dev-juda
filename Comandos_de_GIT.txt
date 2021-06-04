@@ -9,6 +9,7 @@ git merge [nombre-de-la-rama]  ---> Combino los cambios de la rama selecciona co
 git push ---> Subo los cambios a Github
 git pull ---> Obtengo los cambios de una rama en github
 git fetch  ---> Obtengo cambios y nuevas ramas creadas en github
+git clone [URL-del-repositorio]  ---> Permite clonar un repositorio remoto
 EXTRAS
 git status  ---> muestra el estado de los archivos de una rama
 git branch  ---> muestra las ramas que tengo en mi local
