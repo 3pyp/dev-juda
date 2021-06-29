@@ -16,5 +16,14 @@ function showCards() {
 }
 
 function createCard(title, id) {
-  console.log(title, id)
+  const cardTitle = document.createElement ('P');
+  cardTitle.textContent = title;
+
+  const cardDiv = document.createElement ('DIV');
+  cardDiv.classList.add('card');
+
+  cardDiv.appendChild(cardTitle);
+
+  const cardsContainer = document.querySelector('.cards-container');
+  cardsContainer.appendChild(cardDiv);
 }
