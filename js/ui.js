@@ -12,12 +12,17 @@ function createCard(title, id) {
   const cardTitle = document.createElement('P');
   cardTitle.textContent = title;
 
+  const cardImg = document.createElement('IMG');
+  cardImg.src = `assets/images/png/${id}.png`;
+  cardImg.classList.add('img-card');
+
   const cardDiv = document.createElement('DIV');
   cardDiv.classList.add('card');
 
   cardDiv.onclick = selectCard;
 
   cardDiv.appendChild(cardTitle);
+  cardDiv.appendChild(cardImg);
 
   const cardsContainer = document.querySelector('#cards-container');
   cardsContainer.appendChild(cardDiv);
@@ -25,9 +30,12 @@ function createCard(title, id) {
 
 function selectCard (e){
   let element;
-  if (e.target.tagName === 'P'){
+  if (e.target.tagName === 'IMG' ){
     element = e.target.parentElement;
-  } else {
+  } else if (e.target.tagName === 'P'){
+    element = e.target.parentElement;
+  }
+  else {
     element = e.target;
   };
   
