@@ -1,6 +1,6 @@
 function showCards() {
-  const duplicatedData = [...data, ...data] // Spread operator
-  const sortedData = sortData(duplicatedData)
+  const duplicatedData = [...data, ...data]; // Spread operator
+  const sortedData = sortData(duplicatedData);
 
   sortedData.forEach(function (card) {
     const { title, id } = card; // Object Destructuring (Deconstruccion de objectos)
@@ -9,7 +9,8 @@ function showCards() {
 }
 
 function createCard(title, id) {
-  const cardTitle = document.createElement('P');
+  const cardTitle = document.createElement('H2');
+  cardTitle.classList.add('card-name');
   cardTitle.textContent = title;
 
   const cardImg = document.createElement('IMG');
@@ -27,21 +28,3 @@ function createCard(title, id) {
   const cardsContainer = document.querySelector('#cards-container');
   cardsContainer.appendChild(cardDiv);
 }
-
-function selectCard (e){
-  let element;
-  if (e.target.tagName === 'IMG' ){
-    element = e.target.parentElement;
-  } else if (e.target.tagName === 'P'){
-    element = e.target.parentElement;
-  }
-  else {
-    element = e.target;
-  };
-  
-  if (element.classList.contains('card-selected')){
-    element.classList.remove('card-selected');
-  } else {
-    element.classList.add ('card-selected');
-  }
-};

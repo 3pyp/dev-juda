@@ -42,11 +42,11 @@ body {
     margin-top: 60px;
 }
 
-.card img {
+.card .img-card {
     opacity: 0;
 }
 
-.card p {
+.card .card-name {
     opacity: 0;
 }
 
@@ -55,19 +55,21 @@ body {
     transform: rotateY(180deg);
 }
 
-.card-selected p{
-    color: #0da6f3 ;
+.card-selected .card-name {
+    color: #0da6f3;
     font-weight: 700;
     opacity: 1;
     transform: rotateY(180deg);
+    transition: opacity 1.2s ease-in-out;
 }
 
 
-.card-selected img {
+.card-selected .img-card {
     overflow: hidden;
     max-width: 100%;
     opacity: 1;
     transform: rotateY(180deg);
+    transition: opacity 1.2s ease-in-out;
 }
 
 footer {
