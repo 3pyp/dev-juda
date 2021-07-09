@@ -1,5 +1,5 @@
 function showCards() {
-  const duplicatedData = [...data, ...data]; // Spread operator
+  duplicatedData = [...data, ...data]; // Spread operator
   const sortedData = sortData(duplicatedData);
 
   sortedData.forEach(function (card) {
@@ -19,7 +19,7 @@ function createCard(title, id) {
 
   const cardDiv = document.createElement('DIV');
   cardDiv.classList.add('card');
-  cardDiv.id = id;
+  cardDiv.setAttribute('data-card-id', id);
 
   cardDiv.onclick = selectCard;
 
@@ -30,4 +30,6 @@ function createCard(title, id) {
   cardsContainer.appendChild(cardDiv);
 }
 
-
+btn.addEventListener('click', function () {
+  window.location.reload();
+});
