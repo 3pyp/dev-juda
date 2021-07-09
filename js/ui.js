@@ -19,6 +19,7 @@ function createCard(title, id) {
 
   const cardDiv = document.createElement('DIV');
   cardDiv.classList.add('card');
+  cardDiv.id = id;
 
   cardDiv.onclick = selectCard;
 
@@ -28,3 +29,5 @@ function createCard(title, id) {
   const cardsContainer = document.querySelector('#cards-container');
   cardsContainer.appendChild(cardDiv);
 }
+
+

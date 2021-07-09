@@ -6,9 +6,11 @@ function sortData(arrayToSort) {
 function selectCard(e) {
   let element;
 
+  
   const elementsSelected = [
     ...document.getElementsByClassName('card-selected'),
   ];
+
 
   clearSelected(elementsSelected);
 
@@ -21,7 +23,7 @@ function selectCard(e) {
       element = e.target;
     }
 
-    element.classList.toggle('card-selected');
+    element.classList.add('card-selected');
   }
 }
 
@@ -37,6 +39,8 @@ function clearSelected(elements) {
         ele.classList.remove('card-selected')
       })
 
-    }, 3000);
+    }, 2000);
   }
 }
+
+
